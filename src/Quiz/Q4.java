@@ -6,14 +6,21 @@ import util.InputValues;
 
 public class Q4 {
 	public static void main(String[] args) {
-		 Random r = new Random();
-		 int quiz = r.nextInt(100) + 1;
-		 //정답을 랜덤으로 생성
 
 //		int quiz = 50;
-
+		int quiz=0;
 		int i = 0; // while문을 위한 변수
+		
 		while (true) {
+			if(i == 0){
+				//처음에만 실행된다
+				 Random r = new Random();
+				 quiz = r.nextInt(100) + 1;
+				 //정답을 랜덤으로 생성
+				System.out.println("\n=========================================\n수를 결정하였습니다. 맞추어보세요" + quiz);
+			}
+			
+			
 			System.out.print(i + ">>");
 			// 몇번째인지 출력
 
@@ -22,7 +29,7 @@ public class Q4 {
 
 			if (quiz == answer) {
 				// 입력한 숫자가 문제와 맞았을경우 입력을종료
-				System.out.println("맞았습니다");
+				System.out.println("\n맞았습니다");
 
 				System.out.print("다시 하시겠습니까 (y/n) >> ");
 				String answer_exit = InputValues.readString();
@@ -36,7 +43,7 @@ public class Q4 {
 				} else {
 					// 게임을 종료할 경우 (n이 입력됬을때)
 					// 문구를 출력하고 프로그램을 종료
-					System.out.println("종료합니다");
+					System.out.println("\n=========================================\n종료합니다");
 					break;
 				}
 
