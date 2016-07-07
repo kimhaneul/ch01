@@ -11,7 +11,7 @@ public class Q4 {
 		int quiz=0;
 		int i = 0; // while문을 위한 변수
 		
-		while (true) {
+		while (true) { //게임을 무한으로 실행한다.
 			if(i == 0){
 				//처음에만 실행된다
 				 Random r = new Random();
@@ -59,6 +59,6 @@ public class Q4 {
 				}
 			}
 		}
-
 	}
+	
 }

@@ -9,6 +9,7 @@ public class Q3 {
 			// 배열에 String형태로 숫자를 저장
 			num[i] = String.valueOf(i);
 		}
+		
 
 		for (int i = 1; i < num.length; i++) {
 			int count = 0; // 3,6,9의 갯수를 저장
